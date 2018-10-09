@@ -70,7 +70,59 @@ var squareOfFive = square(5);
 function combination(first, last) {
     return first + last;
 }
-console.log(combination('Wilmar', 'Delgado'));
+console.log(combination('Wilmar', ' Delgado'));
+
+var awesomeGroup = "Girl Dev It "; //Global Scope
+
+function whatIsAwesome() {
+    console.log(awesomeGroup + "is pretty awesome"); ///will work
+}
+
+whatIsAwesome();
+
+function whatIsAwesome() {
+    var awesomeGroup = "This class " //Local Scope
+    console.log(awesomeGroup + "is pretty awesome."); ///will work
+}
+
+whatIsAwesome();
+console.log(awesomeGroup + "is pretty awesome."); ///will work
+
+// var catsAreBest = true;
+// var dogsRule = false;
+
+// var myName = '';
+// var numOfKids = 0;
+// var isMarried;
+
+// if (conditions) {
+//     //stament to execute
+// }
+// var age = 30;
+// if (age > 18) {
+//     console.log("you are and adult")
+// }
 
 
+//Set it  up from coldest to hotness.!!
+// var temperature = 5;
+// if (temperature < -20) {
+//     console.log("stay inside")
+// } else if (temperature < 0) {
+//     console.log("wear a coat and a hat")
+// } else if (temperature < 10) {
+//     console.log("wear a coat")
+// } else {
+//     console.log("wear whatever you want")
+// }
 
+var temperature = 11;
+if (temperature < -20) {
+    console.log("stay inside")
+} else if (temperature < 0) {
+    console.log("wear a coat and a hat")
+} else if (temperature > 1 && temperature < 10) {
+    console.log("wear a coat")
+} else {
+    console.log("wear whatever you want")
+}
