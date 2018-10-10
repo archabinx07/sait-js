@@ -52,6 +52,32 @@ function sumOfLowNumbers(num1, num2, num3, num4, num5) {
     return total;
 }
 console.log(sumOfLowNumbers(1,6,7,4,3));
+
+//*******************
+//Heather's Method
+//*******************
+
+function sumOfLowNumbers(num1, num2, num3, num4, num5) {
+    var sum = 0;
+    if (num1 <= 6) {
+        sum += num1;
+    }
+    if (num2 <= 6) {
+        sum += num2;
+    }
+    if (num3 <= 6) {
+        sum += num3;
+    }
+    if (num4 <= 6) {
+        sum += num4;
+    }
+    if (num5 <= 6) {
+        sum += num5;
+    }
+
+    return sum;
+}
+console.log(sumOfLowNumbers(1,6,7,4,3));
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
 // Choose Project site, Start from scratch. When you're finished, link your new project page here.
 
