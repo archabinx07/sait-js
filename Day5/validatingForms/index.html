@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
+        <title>Test Page</title>
+    </head>
+    <body>
+        <!-- <form>
+            <label for="choose">Would you prefer a banana or cherry?</label>
+            <input id="choose"name="i_like"required>
+            <button>Submit</button>
+        </form>
+
+        <form>
+            <label for="choose">Would you prefer a banana or cherry?</label>
+            <input id="choose"name="i_like"pattern="banana|cherry"required>
+            <button>Submit</button>
+        </form> -->
+
+        <form>
+            <div>
+                <label for="choose">Would you prefer a banana or a cherry?</label>
+                <input id="choose" name="i_like" required minlength="6" maxlength="6">
+            </div>
+            <div>
+                <label for="choose">What is your email?</label>
+                <input type="email" placeholder="email@sait.ca" pattern=".+@sait.ca" size="30" required title="Must be a sait.ca email address"/>
+            </div>
+            <div><label for="number">What is your age?</label>
+                <input type="number" id="number" name="amount" value="" min="1" max="60" required>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form> <br> <br>
+
+        <!-- <form action=""name="form1">  
+            Please enter the following details:
+            <p>    
+                Name: <input type="text"id="name"name="txtName" />
+            </p>
+            <p>    
+                Age: <input type="text"id="txtAge"name="txtAge" />
+            </p>
+            <p>
+                <input type="submit"id="submitBtn"value="Submit"name="btnCheckForm">
+            </p>
+
+            <p id="errorName"style="display:none;">Please enter your name.</p>
+            <p id="errorAge"style="display:none;">Please enter your age.</p>
+        </form> -->
+
+
+        <fieldset>
+            <form action=""name="ageForm">  
+                Please enter the following details:
+                <div>
+                    Age: <input type="text" id="txtAge" name="txtAge" value="" min="18" max="60" />
+                </div>
+                <p>
+                    <input type="submit"id="submitBtn"value="Submit"name="btnCheckForm">
+                </p>
+                <p id="errorAge"style="display:none;">Please enter your age.</p>
+                <p id="errorYoung"style="display:none;">Youre too young!</p>
+            </form>
+        </fieldset>
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+#myDiv {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+#goku {
+    position: absolute;
+    margin-top: 25px;
+}
