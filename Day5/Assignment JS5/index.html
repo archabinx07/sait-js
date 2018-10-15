@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <title>Quiz</title>
+    </head>
+    <body>
+        <h1>Quiz</h1>
+
+        <fieldset>
+            <form id="myForm">
+                <div id="qOne">
+                    <label for="choose">What kind of weapon is a falchion?</label>
+                    <div>
+                        <input type="radio"id="riffle"name="weapon"value="riffle"/>
+                        <label for="scales">A riffle</label>
+                    </div> 
+                    <div>
+                        <input type="radio"id="sword"name="weapon"value="sword"  />
+                        <label for="horns">A sword</label>
+                    </div>
+                    <div>
+                        <input type="radio"id="granade"name="weapon"value="granade" />
+                        <label for="claws">A granade</label>
+                    </div>
+                    <div id="submit">
+                        <button name="submit"type="submit">Submit</button>
+                    </div>
+                </div>
+                
+
+                <div id="qTwo" style="display:none">
+                    <div>
+                        <label for="Madrid">What is the capital city of Spain?</label>
+                        <input id="Madrid" name="city" required>
+                    </div>
+                    <div id="submitTwo">
+                        <button name="submitTwo"type="submit">Submit</button>
+                    </div>
+                </div>
+
+                <div id="qThree" style="display:none">
+                    <div>
+                        <label for="Amazon">What is the world's longest river?</label>
+                        <input id="Amazon" name="river" required>
+                    </div>
+                    <div id="submitThree">
+                        <button name="submitThree"type="submit">Submit</button>
+                    </div>
+                </div>
+                
+                <div id="qFour" style="display:none">
+                    <div>
+                        <label for="province">Which of these provinces belong to Alberta?</label>
+                        <div>
+                            <input type="checkbox"id="Edmonton"name="province"value="Edmonton"/>
+                            <label for="Edmonton">Edmonton</label>
+                        </div> 
+                        <div>
+                            <input type="checkbox"id="Toronto"name="province"value="Toronto" />
+                            <label for="Toronto">Toronto</label>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="Vancouver"name="province"value="Vancouver" />
+                            <label for="Vancouver">Vancouver</label>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="Montreal"name="province"value="Montreal" />
+                            <label for="Montreal">Montreal</label>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="Calgary"name="province"value="Calgary" />
+                            <label for="Calgary">Calgary</label>
+                        </div>
+                    </div>
+                    <div id="submitFour">
+                       <button name="submitFour"type="submit">Submit</button>
+                    </div>
+                </div>
+
+                <div id="qFive" style="display:none">
+                    <div>
+                        <label for="number">Choose a number</label>
+                        <input type="number" id="number" name="amount" value="" min="1" max="9" required>
+                    </div>
+                    <div id="submitFive">
+                        <button name="submitFive"type="submit">Submit</button>
+                    </div>
+                </div>
+
+
+
+                <p id="questionOneError"style="display:none;">Please Pick An Option</p>
+                <p id="questionTwoError"style="display:none;">Please Name A City</p>
+                <p id="questionThreeError"style="display:none;">Please Name A River</p>
+                <p id="questionFourError"style="display:none;">Please Pick Some Provinces</p>
+                <p id="questionFiveError"style="display:none;">Please Choose A Number</p>
+                <p id="thankYou"style="display:none;">Thank You</p>
+            </form>
+        </fieldset>
+
+
+        <!-- <fieldset>
+            <form action=""name="ageForm">  
+                Please enter the following details:
+                <div>
+                    Age: <input type="text" id="txtAge" name="txtAge" value="" min="18" max="60" />
+                </div>
+                <p>
+                    <input type="submit"id="submitBtn"value="Submit"name="btnCheckForm">
+                </p>
+                <p id="errorAge"style="display:none;">Please enter your age.</p>
+                <p id="errorYoung"style="display:none;">Youre too young!</p>
+            </form>
+        </fieldset> -->
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>
