@@ -17,7 +17,7 @@ submitButton.addEventListener("click", function(event) {
         event.preventDefault(); 
         qOne.style.display = "none";
         qTwo.style.display = "block";
-    } else {
+    } else if (weapon) {
         event.preventDefault(); 
         qOne.style.display = "none";
         qTwo.style.display = "block";
@@ -44,7 +44,7 @@ submitTwo.addEventListener("click", function(event) {
         event.preventDefault(); 
         qTwo.style.display = "none";
         qThree.style.display = "block";
-    } else {
+    } else if (city) {
         event.preventDefault(); 
         qTwo.style.display = "none";
         qThree.style.display = "block";
@@ -70,7 +70,7 @@ submitThree.addEventListener("click", function(event) {
         event.preventDefault(); 
         qThree.style.display = "none";
         qFour.style.display = "block";
-    } else {
+    } else if (river) {
         event.preventDefault(); 
         qThree.style.display = "none";
         qFour.style.display = "block";
@@ -122,7 +122,7 @@ submitFive.addEventListener("click", function(event) {
         event.preventDefault(); 
         qFive.style.display = "none";
         thankYou.style.display = "block";
-    } else {
+    } else if (number) {
         event.preventDefault(); 
         qFive.style.display = "none";
         thankYou.style.display = "block";
