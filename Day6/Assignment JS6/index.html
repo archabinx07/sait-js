@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <title>Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">  
+</head>
+  <body>
+    <h1>Color Palette Generator</h1>
+        <form action="" id="myForm">
+            <div>
+                <label for="number">Number of colors: </label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </form>
+        <form action="" id="myForm">
+            <div>
+                <label for="hue">Hue of colors: </label>
+                <select>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="random">Random</option>
+                </select>
+            </div>
+        </form>
+        <form action="">
+            <div>
+                <label for="luminosity">Luminosity of colors: </label>
+                <select>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="random">Random</option>
+                </select>
+            </div>
+        </form>
+        <button id="button">Submit</button>
+        <div id="square"></div>
+        <div id="square2"></div>
+        <div id="square3"></div>
+        <div id="square4"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+    <script type="text/javascript" src="./code.js"></script>
+  </body>
+</html>

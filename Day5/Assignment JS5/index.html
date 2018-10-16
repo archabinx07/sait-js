@@ -50,28 +50,26 @@
                 </div>
                 
                 <div id="qFour" style="display:none">
+                    <label for="province">Which of these provinces belong to Alberta?</label>
                     <div>
-                        <label for="province">Which of these provinces belong to Alberta?</label>
-                        <div>
-                            <input type="checkbox"id="Edmonton"name="province"value="Edmonton"/>
-                            <label for="Edmonton">Edmonton</label>
-                        </div> 
-                        <div>
-                            <input type="checkbox"id="Toronto"name="province"value="Toronto" />
-                            <label for="Toronto">Toronto</label>
-                        </div>
-                        <div>
-                            <input type="checkbox"id="Vancouver"name="province"value="Vancouver" />
-                            <label for="Vancouver">Vancouver</label>
-                        </div>
-                        <div>
-                            <input type="checkbox"id="Montreal"name="province"value="Montreal" />
-                            <label for="Montreal">Montreal</label>
-                        </div>
-                        <div>
-                            <input type="checkbox"id="Calgary"name="province"value="Calgary" />
-                            <label for="Calgary">Calgary</label>
-                        </div>
+                        <input type="checkbox"id="edmonton"name="province"value="edmonton"/>
+                        <label for="Edmonton">Edmonton</label>
+                    </div> 
+                    <div>
+                        <input type="checkbox"id="toronto"name="province"value="toronto" />
+                        <label for="Toronto">Toronto</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="vancouver"name="province"value="vancouver" />
+                        <label for="Vancouver">Vancouver</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="montreal"name="province"value="montreal" />
+                        <label for="Montreal">Montreal</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="calgary"name="province"value="calgary" />
+                        <label for="Calgary">Calgary</label>
                     </div>
                     <div id="submitFour">
                        <button name="submitFour"type="submit">Submit</button>
@@ -95,25 +93,9 @@
                 <p id="questionThreeError"style="display:none;">Please Name A River</p>
                 <p id="questionFourError"style="display:none;">Please Pick Some Provinces</p>
                 <p id="questionFiveError"style="display:none;">Please Choose A Number</p>
-                <p id="thankYou"style="display:none;">Thank You</p>
+                <p id="scoreMessage"style="display:none;">You Score: <span id="result"></span></p>
             </form>
         </fieldset>
-
-
-        <!-- <fieldset>
-            <form action=""name="ageForm">  
-                Please enter the following details:
-                <div>
-                    Age: <input type="text" id="txtAge" name="txtAge" value="" min="18" max="60" />
-                </div>
-                <p>
-                    <input type="submit"id="submitBtn"value="Submit"name="btnCheckForm">
-                </p>
-                <p id="errorAge"style="display:none;">Please enter your age.</p>
-                <p id="errorYoung"style="display:none;">Youre too young!</p>
-            </form>
-        </fieldset> -->
-
 
         <script src="./script.js"></script>
     </body>

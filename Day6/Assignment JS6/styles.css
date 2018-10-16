@@ -1,0 +1,27 @@
+button {
+    margin-bottom: 20px;
+}
+#square {
+    /* background-color: black; */
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+#square2 {
+    background-color: rgb(105, 3, 3);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+#square3 {
+    background-color: rgb(63, 28, 145);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+#square4 {
+    background-color: rgb(26, 105, 19);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}

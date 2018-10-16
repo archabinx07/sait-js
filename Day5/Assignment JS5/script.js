@@ -14,6 +14,7 @@ submitButton.addEventListener("click", function(event) {
     } 
     if (sword.checked) {
         score = score + 20;  
+        console.log(score);
         event.preventDefault(); 
         qOne.style.display = "none";
         qTwo.style.display = "block";
@@ -39,8 +40,9 @@ submitTwo.addEventListener("click", function(event) {
         event.preventDefault();      
         questionTwoError.style.display = "block"; 
     } 
-    if (Madrid.checked) {
+    if ("Madrid") {
         score = score + 20;  
+        console.log(score);
         event.preventDefault(); 
         qTwo.style.display = "none";
         qThree.style.display = "block";
@@ -65,8 +67,9 @@ submitThree.addEventListener("click", function(event) {
         event.preventDefault();      
         questionThreeError.style.display = "block"; 
     } 
-    if (Amazon.checked) {
-        score = score + 20;  
+    if ("Amazon") {
+        score = score + 20;
+        console.log(score);  
         event.preventDefault(); 
         qThree.style.display = "none";
         qFour.style.display = "block";
@@ -82,24 +85,27 @@ submitThree.addEventListener("click", function(event) {
 var submitFour = myForm.submitFour;
 submitFour.addEventListener("click", function(event) {
     event.preventDefault();
-    questionFourError.style.display = "none"; 
+    questionFourError.style.display = "none";
 
     var province = myForm["province"].value;
-    // console.log(weapon);
 
     if (!province) {      
         event.preventDefault();      
         questionFourError.style.display = "block"; 
     } 
-    if (Edmonton.checked && Calgary.checked) {
+    if (edmonton.checked && calgary.checked) {
         score = score + 20;  
+        console.log(score);
         event.preventDefault(); 
         qFour.style.display = "none";
+        questionFourError.style.display = "none";
         qFive.style.display = "block";
-    } else {
+    } else if (toronto.checked || vancouver.checked || montreal.checked) {
+        qFive.style.display = "block";
         event.preventDefault(); 
         qFour.style.display = "none";
-        qFive.style.display = "block";
+        questionFourError.style.display = "none";
+        
     }
 });
 
@@ -109,6 +115,7 @@ var submitFive = myForm.submitFive;
 submitFive.addEventListener("click", function(event) {
     event.preventDefault();
     questionFiveError.style.display = "none"; 
+    questionFourError.style.display = "none";
 
     var number = myForm["number"].value;
     // console.log(weapon);
@@ -117,14 +124,20 @@ submitFive.addEventListener("click", function(event) {
         event.preventDefault();      
         questionFiveError.style.display = "block"; 
     } 
-    if (7 === true) {
-        score = score + 20;  
+    if (7) {
+        score = score + 20;
+        console.log(score); 
+        document.getElementById("result").innerHTML = score;
         event.preventDefault(); 
         qFive.style.display = "none";
-        thankYou.style.display = "block";
-    } else if (number) {
+        scoreMessage.style.display = "block";
+    } else if (7 === false) {
+        document.getElementById("result").innerHTML = score;
         event.preventDefault(); 
         qFive.style.display = "none";
-        thankYou.style.display = "block";
+        scoreMessage.style.display = "block";
+        document.querySelectorAll("score").innerHTML = "";
     }
 });
+
+
