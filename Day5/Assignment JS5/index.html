@@ -9,6 +9,7 @@
 
         <fieldset>
             <form id="myForm">
+                <!---Question 1-->
                 <div id="qOne">
                     <label for="choose">What kind of weapon is a falchion?</label>
                     <div>
@@ -28,7 +29,7 @@
                     </div>
                 </div>
                 
-
+                <!---Question 2-->
                 <div id="qTwo" style="display:none">
                     <div>
                         <label for="Madrid">What is the capital city of Spain?</label>
@@ -39,6 +40,7 @@
                     </div>
                 </div>
 
+                <!---Question 3-->
                 <div id="qThree" style="display:none">
                     <div>
                         <label for="Amazon">What is the world's longest river?</label>
@@ -49,8 +51,9 @@
                     </div>
                 </div>
                 
+                <!---Question 4-->
                 <div id="qFour" style="display:none">
-                    <label for="province">Which of these provinces belong to Alberta?</label>
+                    <label for="province">Which of these cities belong to Alberta?</label>
                     <div>
                         <input type="checkbox"id="edmonton"name="province"value="edmonton"/>
                         <label for="Edmonton">Edmonton</label>
@@ -76,9 +79,11 @@
                     </div>
                 </div>
 
+
+                <!---Question 5-->
                 <div id="qFive" style="display:none">
                     <div>
-                        <label for="number">Choose a number</label>
+                        <label for="number">Choose a number (1-9)</label>
                         <input type="number" id="number" name="amount" value="" min="1" max="9" required>
                     </div>
                     <div id="submitFive">
@@ -87,13 +92,13 @@
                 </div>
 
 
-
+                <!---Question Errors-->
                 <p id="questionOneError"style="display:none;">Please Pick An Option</p>
                 <p id="questionTwoError"style="display:none;">Please Name A City</p>
                 <p id="questionThreeError"style="display:none;">Please Name A River</p>
                 <p id="questionFourError"style="display:none;">Please Pick Some Provinces</p>
                 <p id="questionFiveError"style="display:none;">Please Choose A Number</p>
-                <p id="scoreMessage"style="display:none;">You Score: <span id="result"></span></p>
+                <p id="scoreMessage"style="display:none;">You Score: <span id="result"></span>/100</p>
             </form>
         </fieldset>
 

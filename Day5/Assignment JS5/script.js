@@ -1,3 +1,5 @@
+
+//Question 1
 var submitButton = myForm.submit;
 var score = 0;
 
@@ -6,20 +8,16 @@ submitButton.addEventListener("click", function(event) {
     questionOneError.style.display = "none"; 
 
     var weapon = myForm["weapon"].value;
-    // console.log(weapon);
 
-    if (!weapon) {      
-        event.preventDefault();      
+    if (!weapon) {    
         questionOneError.style.display = "block"; 
     } 
     if (sword.checked) {
         score = score + 20;  
         console.log(score);
-        event.preventDefault(); 
         qOne.style.display = "none";
         qTwo.style.display = "block";
-    } else if (weapon) {
-        event.preventDefault(); 
+    } else if (weapon) { 
         qOne.style.display = "none";
         qTwo.style.display = "block";
     }
@@ -27,61 +25,53 @@ submitButton.addEventListener("click", function(event) {
 
 
 
-
+//Question 2
 var submitTwo = myForm.submitTwo;
 submitTwo.addEventListener("click", function(event) {
     event.preventDefault();
     questionTwoError.style.display = "none"; 
 
-    var city = myForm["city"].value;
-    // console.log(weapon);
+    var city = document.getElementById('Madrid');
 
-    if (!city) {      
-        event.preventDefault();      
+    if (city.value =='') {           
         questionTwoError.style.display = "block"; 
     } 
-    if ("Madrid") {
-        score = score + 20;  
+    if (city.value === 'madrid' || city.value === 'Madrid') {
+        score = score + 20;
         console.log(score);
-        event.preventDefault(); 
         qTwo.style.display = "none";
         qThree.style.display = "block";
-    } else if (city) {
-        event.preventDefault(); 
+    } else if (city.value !=='') {
         qTwo.style.display = "none";
         qThree.style.display = "block";
     }
 });
 
 
-
+//Question 3
 var submitThree = myForm.submitThree;
 submitThree.addEventListener("click", function(event) {
     event.preventDefault();
     questionThreeError.style.display = "none"; 
 
-    var river = myForm["river"].value;
-    // console.log(weapon);
+    var city = document.getElementById('Amazon');
 
-    if (!river) {      
-        event.preventDefault();      
+    if (city.value =='') {    
         questionThreeError.style.display = "block"; 
     } 
-    if ("Amazon") {
+    if (city.value === 'amazon' || city.value === 'Amazon') {
         score = score + 20;
         console.log(score);  
-        event.preventDefault(); 
         qThree.style.display = "none";
         qFour.style.display = "block";
-    } else if (river) {
-        event.preventDefault(); 
+    } else if (city.value !=='') {
         qThree.style.display = "none";
         qFour.style.display = "block";
     }
 });
 
 
-
+//Question 4
 var submitFour = myForm.submitFour;
 submitFour.addEventListener("click", function(event) {
     event.preventDefault();
@@ -89,20 +79,17 @@ submitFour.addEventListener("click", function(event) {
 
     var province = myForm["province"].value;
 
-    if (!province) {      
-        event.preventDefault();      
+    if (!province) {           
         questionFourError.style.display = "block"; 
     } 
     if (edmonton.checked && calgary.checked) {
         score = score + 20;  
         console.log(score);
-        event.preventDefault(); 
         qFour.style.display = "none";
         questionFourError.style.display = "none";
         qFive.style.display = "block";
     } else if (toronto.checked || vancouver.checked || montreal.checked) {
         qFive.style.display = "block";
-        event.preventDefault(); 
         qFour.style.display = "none";
         questionFourError.style.display = "none";
         
@@ -110,30 +97,28 @@ submitFour.addEventListener("click", function(event) {
 });
 
 
-
+//Question 5
 var submitFive = myForm.submitFive;
 submitFive.addEventListener("click", function(event) {
     event.preventDefault();
     questionFiveError.style.display = "none"; 
     questionFourError.style.display = "none";
 
-    var number = myForm["number"].value;
-    // console.log(weapon);
+    var correctNum = document.getElementById('number');
 
-    if (!number) {      
-        event.preventDefault();      
+    if (correctNum.value =='') {            
         questionFiveError.style.display = "block"; 
     } 
-    if (7) {
+    if (correctNum.value == 7) {
         score = score + 20;
         console.log(score); 
+        //Displays Result
         document.getElementById("result").innerHTML = score;
-        event.preventDefault(); 
         qFive.style.display = "none";
         scoreMessage.style.display = "block";
-    } else if (7 === false) {
+    } else if (correctNum.value !== 7) {
+        //Displays Result
         document.getElementById("result").innerHTML = score;
-        event.preventDefault(); 
         qFive.style.display = "none";
         scoreMessage.style.display = "block";
         document.querySelectorAll("score").innerHTML = "";
