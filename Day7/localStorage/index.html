@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        //Set Data
+        localStorage.setItem("username", "Wilmar");
+        localStorage.firstName = "Wilmar";
+        localStorage  .setItem("user name", "Alice")
+
+        //Get Data
+        // var name = localStorage.getItem("username"); //Displays Wilmar-First Method
+        var name = localStorage.firstName; //Displays Wilmar-Second Method
+        console.log(name);
+
+        //Remove Data
+        localStorage.removeItem("username"); //Removes Wilmar-First Method
+        localStorage.username = null; //Removes Wilmar-Second Method
+
+        localStorage.clear();
+        console.log(name);
+    </script>
+</body>
+</html>
