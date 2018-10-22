@@ -171,11 +171,9 @@ nav ul li a:hover {
 
 .package-section {
     text-align: center;
-    width: 80%;
+    width: 60%;
     margin: auto;
-
 }
-
 .package-section h2 {
     padding-top: 66px;
     color: azure;
