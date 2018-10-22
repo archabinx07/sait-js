@@ -79,22 +79,40 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel obcaecati itaque excepturi quos odio!</p> -->
                             <img  id= "img3" alt="image" height="300px" width="300px" src="./img/plane.JPG" onmouseover = "mouseOverImage3()"  onmouseout="mouseOutImage3()"/> 
                         </div>
+                        <div class="card-panel">
+                            <!-- <i class="fas fa-users fa-6x"></i>
+                            <h3>Family-Friendly Fun</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel obcaecati itaque excepturi quos odio!</p> -->
+                            <img  id= "img4" alt="image" height="300px" width="300px" src="./img/family.JPG" onmouseover = "mouseOverImage4()"  onmouseout="mouseOutImage4()"/> 
+                        </div>
+                        <div class="card-panel">
+                            <!-- <i class="fas fa-hand-holding-usd fa-6x"></i>
+                            <h3>Luxury Travel</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel obcaecati itaque excepturi quos odio!</p> -->
+                            <img  id= "img5" alt="image" height="300px" width="300px" src="./img/luxury.JPG" onmouseover = "mouseOverImage5()"  onmouseout="mouseOutImage5()"/> 
+                        </div>
+                        <div class="card-panel">
+                            <!-- <i class="fas fa-fire fa-6x"></i>
+                            <h3>Weekly Hot Deals</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel obcaecati itaque excepturi quos odio!</p> -->
+                            <img  id= "img6" alt="image" height="300px" width="300px" src="./img/hot.JPG" onmouseover = "mouseOverImage6()"  onmouseout="mouseOutImage6()"/> 
+                        </div>
                     </div>
                 </div>
 
                 <!---Customer Registration-->
                 <div class="registration-section"  id="register">
                     <div class="registration-content">
-                        <form action="" name="myForm">
+                        <form action="" class="myForm">
                             <h2>Customer Registration</h2>
-                            <p>Want To Set Up An Account With Travel Experts? <br> Please Fill Out This Form</p>
+                            <p>Love travel? You've come to the right place. <br> Enter your details to get travel inspiration, trending destinations and amazing offers delivered to your inbox</p>
 
-                            <input type="text" placeholder="Name" size=65 name="Name"><br>        
-                            <input type="text" placeholder="Address" size=65 name="Address"> <br> 
-                            <input type="text" placeholder="City" size=65 name="City"> <br> 
+                            <input type="text" placeholder="Name" size=65 name="Name" required><br>        
+                            <input type="text" placeholder="Address" size=65 name="Address" required> <br> 
+                            <input type="text" placeholder="City" size=65 name="City" required> <br> 
                             <div class="input-field">
-                                <select type="text" value="" name="Provinces">
-                                    <option value="select">Select</option>
+                                <select type="text" value="" name="Provinces" required>
+                                    <option value="" selected disabled hidden>Select</option>
                                     <option value="ab">AB</option>
                                     <option value="bc">	BC</option>
                                     <option value="mb">MB</option>
@@ -110,42 +128,59 @@
                                     <option value="yt">YT</option>
                                 </select>
                             </div>
-                            <input type="text" placeholder="Zip/Postal Code" pattern="A0A-0A0" size=65 name="postalCode"> <br>
-                            <input type="text" placeholder="E-mail" size=65 name="EMail"><br> 
-                            <input type="text" placeholder="Phone" size=65 name="Phone"><br>   
-                            <input type="submit" value="Submit" class="btn">
+                            <input type="text" placeholder="Zip/Postal Code" size=65 id="postalCode" required> <br>
+                            <input type="text" placeholder="E-mail" pattern=".+@gmail.com" size=65 name="EMail" required><br> 
+                            <input type="text" placeholder="Phone" size=65 name="Phone" required><br>   
+                            <input type="submit" value="Submit" class="btn" id="submit">
                         </form>
                     </div>
                 </div>
                 <!---Contact US-->
-                <div class="contact-section" id="contact">
+                <section class="contact-section" id="contact">
                         <h2>Contact Us</h2>
-                        <div id="contactName">
+                        <p>Feel Free To Contact Our Travel Experts:</p>
+                        <hr>
+                        <div class="t-expert">
+                            <i class="fas fa-user-alt fa-6x"></i>
+                        <div class="t-expertInfo">
                             <h3 id="contactNameOne"></h3>
-                            <p id="contactNumOne"></p>
+                            <p id="contactNumOne"></p></div>
                         </div>
-                        <div id="contactName">
+                        <hr>
+                        <div class="t-expert">
+                            <i class="fas fa-user-alt fa-6x"></i>
+                        <div class="t-expertInfo">
                             <h3 id="contactNameTwo"></h3>
-                            <p id="contactNumTwo"></p>
+                            <p id="contactNumTwo"></p></div>
                         </div>
-                        <div id="contactName">
+                        <hr>
+                        <div class="t-expert">
+                            <i class="fas fa-user-alt fa-6x"></i>
+                        <div class="t-expertInfo">
                             <h3 id="contactNameThree"></h3>
-                            <p id="contactNumThree"></p>
+                            <p id="contactNumThree"></p></div>
                         </div>
-                        <div id="contactName">
+                        <hr>
+                        <div class="t-expert">
+                            <i class="fas fa-user-alt fa-6x"></i>
+                        <div class="t-expertInfo">
                             <h3 id="contactNameFour"></h3>
-                            <p id="contactNumFour"></p>
+                            <p id="contactNumFour"></p></div>
                         </div>
-                        <div id="contactName">
+                        <hr>
+                        <div class="t-expert">
+                            <i class="fas fa-user-alt fa-6x"></i>
+                        <div class="t-expertInfo">
                             <h3 id="contactNameFive"></h3>
-                            <p id="contactNumFive"></p>
+                            <p id="contactNumFive"></p></div>
                         </div>
-                </div>
+                </section>
+            </div>
                 <!---Footer-->
                 <footer>
-                    <p class="flow-text">TravelAgency &copy; 2018 | All Right Reserved.</p>
+                    <!-- <p id='todaysDate'></p> -->
+                    <p class="flow-text"><span id="todaysDate"></span> | TravelAgency &copy; 2018 | All Right Reserved.</p>             
                 </footer>
-            </div>
       </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/code.js"></script>
