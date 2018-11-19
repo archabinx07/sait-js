@@ -261,10 +261,10 @@ input{
 .contact-section {
     text-align: center;
     margin: auto; 
-    
+    padding-bottom: 45px;
 }
 .contact-section h2 {
-    padding-top: 66px;
+    padding-top: -66px;
     color: azure;
     font-size: 46px;
     font-weight: 700;
