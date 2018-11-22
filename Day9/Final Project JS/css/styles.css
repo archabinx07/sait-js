@@ -264,7 +264,7 @@ input{
     padding-bottom: 45px;
 }
 .contact-section h2 {
-    padding-top: -66px;
+    padding-top: 66px;
     color: azure;
     font-size: 46px;
     font-weight: 700;
@@ -351,6 +351,9 @@ footer p {
         flex-direction: column;
         margin-left: 30px;
     }
+    /* .package-section {
+        width: 80%;
+    } */
 }
 
 @media screen and (max-width: 1100px) {
@@ -366,9 +369,12 @@ footer p {
         flex-direction: column;
         margin-left: 30px;
     }
+    .package-section {
+        width: 80%;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
     .t-expert {
         display: flex;
         flex-direction: row;
@@ -425,6 +431,9 @@ select {
 footer {
     height: 100px;
 
+}
+.package-section {
+    width: 80%;
 }
 }
 
