@@ -461,10 +461,4 @@ footer {
         width: 100%;
         margin: auto;
     }
-    .card-panel {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 20px;
-        margin-left: -10px;
-    }
 }
