@@ -109,7 +109,7 @@ function airplaneFlies() {
     } else {            
         img.style.left = (currentLeft - 10) + "px";    
         img.style.right = (currentLeft - 10) + "px";    
-        img.style.transform = "scaleY(-1)";         
+        img.style.transform = "scaleX(1)";         
     }    
 }    
 
