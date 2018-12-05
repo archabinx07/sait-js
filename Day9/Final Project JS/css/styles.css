@@ -385,14 +385,6 @@ nav ul {
     float: right;
 }
 
-.card-panel {
-    width: 300px;
-    height: 300px;
-    background: #dddcdc;
-    margin-bottom: 20px;
-    margin-left: -38px;
-}
-
 .package-section {
     width: 100%;
     margin: auto;
@@ -429,10 +421,6 @@ footer {
     height: 100px;
 
 }
-.package-section {
-    width: 80%;
-    margin: auto;
-}
 }
 
 @media screen and (max-width: 600px) {
@@ -448,6 +436,10 @@ footer {
         flex-direction: column;
         margin-left: 30px;
     }
+    .hero-content {
+        margin-top: 120px;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -462,5 +454,17 @@ footer {
         display: flex;
         flex-direction: column;
         margin-left: 30px;
+    }
+    .package-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+    }
+    .card-panel {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-left: -10px;
     }
 }
