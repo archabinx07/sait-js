@@ -13,6 +13,9 @@ var luminosityApply = $('#addLuminosity');
 var luminosity = $('#luminosity')
 
 
+var item = document.getElementById("square");
+
+
 
 // Submit Hue Colors
 
@@ -130,3 +133,27 @@ luminosityApply.on('click', function () {
         luminosity: luminosity.val()
     })})
 })
+
+
+// item.addEventListener("mouseover", func, false);
+// item.addEventListener("mouseout", func1, false);
+
+// function func()
+// {  // not needed since item is already global, 
+//    // I am assuming this is here just because it's sample code?
+//    // var item = document.getElementById("button"); 
+//    document.body.style.backgroundColor = "black";
+// }
+
+// function func1()
+// {  
+//     document.body.style.backgroundColor = "azure";
+// }
+
+
+// document.getElementById('square').onclick = changeColor;
+
+// function changeColor() {
+//     document.body.style.color = "red";
+//     return false;
+// }
